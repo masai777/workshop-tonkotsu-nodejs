@@ -41,4 +41,6 @@ npm start
 
 Follow the coach instructions and good luck!
 
+## チャレンジ４ イシュー自動クローズ
+
 ## �v�����N���F�e�X�g
