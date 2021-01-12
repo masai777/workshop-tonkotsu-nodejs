@@ -18,6 +18,8 @@
 on:
   release:
     types: [created]
+  pull_request:
+    branches: [master] 
 
 env:
   AZURE_WEBAPP_NAME: webappgroup2    # set this to your application's name
@@ -47,5 +49,4 @@ jobs:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-        slot-name: 'production'
     
